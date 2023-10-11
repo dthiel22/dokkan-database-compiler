@@ -1,0 +1,57 @@
+id - made from card ID
+wiki_link - no need
+title - 
+name
+rarity
+type
+cost
+ls_description
+ls_description_eza
+sa_id - 
+sa_type - 
+sa_name - special_sets.name (using card_specials.id)
+sa_description - special_sets.description
+sa_description_eza
+ultra_sa_id - set to if special_set is hyper
+ultra_sa_type - 
+ultra_sa_name - 
+ultra_sa_name
+ultra_sa_description
+ultra_sa_description_eza
+ps_name
+ps_description
+ps_description_eza
+sa_type_active
+active_skill_name
+active_skill
+active_skill_condition
+active_skill_condition_eza
+transform_type
+transform_condition
+transform_condition_eza
+standby_name
+standby_description
+standby_description_eza
+standby_condition
+standby_condition_eza
+finish_attack_1_name
+finish_attack_1_description
+finish_attack_1_description_eza
+finish_attack_1_condition
+finish_attack_1_condition_eza
+finish_attack_2_name
+finish_attack_2_description
+finish_attack_2_description_eza
+finish_attack_2_condition
+finish_attack_2_condition_eza
+transform_to
+transformed_from
+transformed
+link_skill
+category
+Ki12
+Ki24
+jp_date
+glb_date
+jp_date_eza
+glb_date_eza
