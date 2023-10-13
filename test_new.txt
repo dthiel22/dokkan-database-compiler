@@ -5,33 +5,51 @@ title -
 name -
 rarity - 
 type -
-cost - 
-leader_skill_description - 
-super_attacks - 
-passive_name - 
-passive_description - 
+cost -
+
+leader_skill_description_id - cards.leader_skill
+super_attacks - cards_specials using card.id
+passive_skill_set_id - 
 active_skills - 
 transformed - set true/false if transforms_from
 transforms_to - find passive_skill_set_id using passive_skill_id in passive_skill_set_relations
+transforms_from - (if character ID is in transforms_to???)
 
 use passive_skill_set_id in passive_skills.id to find eff_value1 === new character id
 
-transforms_from - (if character ID is in transforms_to???)
+
 standby_skills - use cards.id to find standby_skill_set_id in card_standby_skill_set_relations 
 finish_skills - use cards.id to find finish_skill_set_id in card_finish_skill_set_relations
 link_skills - SOLVED
 categories - SOLVED
-eza_information - cards.optimal_awakening_grow_type 
 
-LEADER SKILL MODEL
-==================
+optimal_awakening_grow_type - 
+potential_npard_id
+
+TODO:
+for eza information, we check to see if optimal_awakening_grow_type is 
+TODO:
+
+LEADER SKILL SETS MODEL
+=======================
 id - 
+name - 
 character_database_id - 
 
-PASSIVE SKILL MODEL
-===================
+EXTRA LEADER SKILL INFORMAITON
+==============================
+leader_skills model
+
+PASSIVE SKILL SETS MODEL
+========================
 id - 
 character_database_id - 
+description - 
+extra_passive_skill_information_ids - [array of passive_skill_set_relations]
+
+EXTRA PASSIVE SKILL INFORMATION
+===============================
+passive_skills object
 
 SUPER ATTACK MODEL
 ==================
@@ -71,7 +89,11 @@ SKILL GROUP (skill_group_relations) //TODO:not needed for initial database
 ===========
 type - skill_group_relations.target_type
 
-
+TRANSFORMATION_DESCRIPTIONS
+===========================
+id - 
+skill_type - 
+description - 
 
 
 
