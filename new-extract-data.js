@@ -94,8 +94,6 @@ async function getCategoryName(categoryId) {
   });
 }
 
-const processedCharacters = []; // Array to hold processed characters
-
 async function main() {
     try {
       const sqliteDb = new sqlite3.Database('C:/Users/Alex/All Dokkan Stuff/Dokkan_Asset_Downloader_v2.2.2/DokkanFiles/global/en/sqlite/current/en/database.db');
@@ -115,7 +113,8 @@ async function main() {
             row.leader_skill_set_id === null ||
             row.passive_skill_set_id === null ||
             row.link_skill1_id === null ||
-            row.lv_max < 100) {
+            row.lv_max < 100 ||
+            row.grow_type < 40) {
             // console.log(`Skipping character_id: ${row.id} due to missing key values.`);
             continue;
           }
